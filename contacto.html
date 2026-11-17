@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Ferretería Clavito</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Ferretería Clavito</h1>
+    <p>Todo para construir, reparar y mejorar tu hogar</p>
+    <img src="imagenes/tienda.png" alt="Ferretería Clavito" class="logo">
+  </header>
+
+  <nav>
+    <a href="mi_negocio.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="productos.html">Productos</a>
+    <a href="informacion.html">Información</a>
+    <a href="contacto.html" class="activo">Contacto</a>
+    <a href="cotizador.html">cotizar</a>
+  </nav>
+
+  <main>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Dirección:</strong> Av. Juárez 456, Col. Centro</p>
+      <p><strong>Teléfono:</strong> 555 987 6543</p>
+      <p><strong>Correo:</strong> contacto@ferreteriaclavito.com</p>
+      <p><strong>Horario:</strong> Lunes a sábado, 8:00 a 19:00 h</p>
+
+      <h3>Solicita información</h3>
+      <form>
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required>
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono">
+
+          <label for="motivo">Motivo de contacto:</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Selecciona una opción</option>
+            <option value="precios">Consultar precios</option>
+            <option value="disponibilidad">Consultar disponibilidad</option>
+            <option value="servicio">Información de un servicio</option>
+          </select>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit">Enviar solicitud</button>
+          <button type="reset">Limpiar formulario</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ferretería Clavito - 2026. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

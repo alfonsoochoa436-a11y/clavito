@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Ferretería Clavito</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Ferretería Clavito</h1>
+    <p>Todo para construir, reparar y mejorar tu hogar</p>
+    <img src="imagenes/tienda.png" alt="Ferretería Clavito" class="logo">
+  </header>
+
+  <nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="productos.html" class="activo">Productos</a>
+    <a href="informacion.html">Información</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="cotizador.html">Cotizador</a>
+  </nav>
+
+  <main>
+    <h2>Nuestros productos</h2>
+    <p>Indica la cantidad deseada para cada artículo y calcula tu presupuesto total:</p>
+    
+    <!-- Contenedor general de productos -->
+    <div class="contenedor-productos">
+      
+      <!-- Producto 1 -->
+      <div class="producto">
+        <img src="imagenes/martillo.png" alt="Martillo de acero">
+        <h3>Martillo de acero</h3>
+        <p>Martillo con mango de madera, ideal para carpintería.</p>
+        <p class="precio">Precio: $120.00</p>
+        
+        <div class="selector-cantidad">
+          <label for="cantidad-1">Cantidad:</label>
+          <input type="number" id="cantidad-1" min="0" step="1" value="0">
+        </div>
+        <p class="subtotal-producto">Subtotal: $<span id="subtotal-1">0.00</span></p>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="producto">
+        <img src="imagenes/taladro.png" alt="Taladro eléctrico">
+        <h3>Taladro eléctrico</h3>
+        <p>Taladro de 600 W con velocidad variable y brocas.</p>
+        <p class="precio">Precio: $850.00</p>
+        
+        <div class="selector-cantidad">
+          <label for="cantidad-2">Cantidad:</label>
+          <input type="number" id="cantidad-2" min="0" step="1" value="0">
+        </div>
+        <p class="subtotal-producto">Subtotal: $<span id="subtotal-2">0.00</span></p>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="producto">
+        <img src="imagenes/pintura.png" alt="Cubeta de pintura vinílica">
+        <h3>Pintura vinílica</h3>
+        <p>Cubeta de 19 litros con acabado mate.</p>
+        <p class="precio">Precio: $1,250.00</p>
+        
+        <div class="selector-cantidad">
+          <label for="cantidad-3">Cantidad:</label>
+          <input type="number" id="cantidad-3" min="0" step="1" value="0">
+        </div>
+        <p class="subtotal-producto">Subtotal: $<span id="subtotal-3">0.00</span></p>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="producto">
+        <img src="imagenes/llaves.png" alt="Juego de llaves">
+        <h3>Juego de llaves</h3>
+        <p>Set de 10 llaves españolas de acero de alta resistencia.</p>
+        <p class="precio">Precio: $320.00</p>
+        
+        <div class="selector-cantidad">
+          <label for="cantidad-4">Cantidad:</label>
+          <input type="number" id="cantidad-4" min="0" step="1" value="0">
+        </div>
+        <p class="subtotal-producto">Subtotal: $<span id="subtotal-4">0.00</span></p>
+      </div>
+
+    </div>
+
+    <!-- Sección de Resumen de Compra (Paso 4) -->
+    <section class="resumen-compra">
+      <h2>Resumen de mi compra</h2>
+      <button type="button" id="calcular-compra">Calcular compra</button>
+      <p>Importe: $<span id="importe-compra">0.00</span></p>
+      <p>Descuento: $<span id="descuento-compra">0.00</span></p>
+      <p>Total a pagar: $<span id="total-compra">0.00</span></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Ferretería Clavito - 2026. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script con la lógica de JavaScript (Paso 5 y 6) -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
